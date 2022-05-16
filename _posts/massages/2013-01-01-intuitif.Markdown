@@ -8,14 +8,14 @@ layout: article
 section: massages
 section_title: Massages
 permalink: massages/intuitif.html
-time: 1h / 1h30 / 1h40
-price: 80 / 110 /125
+time: 1h
+price: 80
 slug: intuitif
 links: [ ayurvedique, californien, tarif, beaute]
 
 description: "Un massage sur mesure, adapté à vos besoins pour encore plus de détente et de bien-être.
 
-Format d'1h, 1h15, 1h30 et 2h."
+Format d'1h, 1h15, 1h30, 1h40 et 2h."
 ---
 Ce massage commence par un entretien pour savoir comment vous vous sentez, sur quoi, 
 quelles parties du corps vous souhaitez travailler et en fonction de votre énergie, vos 
@@ -30,4 +30,4 @@ qui est bon pour vous.
 Les différentes techniques employées proviennent des massages ayurvédique indien, 
 deep-tissue, thaï, balinais, chinois, californien, chi nei tsang(ventre), réflexologie, suédois.
 
-Il existe en différents formats d'1h, 1h15,1h30 ou 2h.
+Il existe en différents formats d'1h, 1h15,1h30, 1h40 ou 2h.
