@@ -8,8 +8,8 @@ layout: article
 section: massages
 section_title: Massages
 permalink: massages/intuitif.html
-time: 1h
-price: 80
+time: 1h / 1h30 / 1h40
+price: 80 / 110 /125
 slug: intuitif
 links: [ ayurvedique, californien, tarif, beaute]
 
