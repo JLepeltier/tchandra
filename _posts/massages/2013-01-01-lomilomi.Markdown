@@ -9,7 +9,7 @@ section: massages
 section_title: Massages
 permalink: massages/lomilomi.html
 time: 1h15
-price: 90
+price: 95
 slug: lomilomi
 links: [balinais, deeptissue, cabinet, tarif]
 good: ["Elimination des toxines", "Relancer la circulation lymphatique", "Oxygénation des tissus", "Décontraction musculaire", "Lâcher prise"]
