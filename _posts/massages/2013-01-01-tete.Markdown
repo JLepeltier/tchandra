@@ -9,7 +9,7 @@ section: massages
 section_title: Massages
 permalink: massages/tete.html
 time: 1h
-price: 75
+price: 80
 slug: tete
 links: [thai, reflexologie, beaute, tarif]
 good: ["Pour les personnes souffrant de bruxisme, migraines et tensions", "Lâcher prise"]
