@@ -1,0 +1,52 @@
+---
+css:  [css/list.css, css/links.css, css/article.css]
+lead: "Soin visage"
+title: "Soin visage"
+small_image: img/articles/beaute/visage/small.jpg
+big_image: img/articles/beaute/visage/big.jpg
+layout: article
+section: beaute
+section_title: Beauté
+permalink: beaute/visage.html
+time: 1h
+price: 85
+slug: visage
+links: [tarif, epilation, massages, cabinet]
+description: "Prendre soin de soi, c'est aussi prendre soin de sa peau."
+---
+Kajame propose des produits fabriqués sous contrôle
+dermatologique par un laboratoire français.
+
+
+La Gamme 100% Naturelle Kajame, pour répondre aux
+attentes d’une époque en quête d’authenticité, regorge de
+principes actifs (Huile d’argan, Huile de pépins de figue de
+barbarie, Aloé vera, Huile de noyau d’abricot, Beurre de
+karité) puisés dans la richesse des plantes du soleil et les
+traditions ancestrales de différents pays.
+
+
+Ce soin à base de produits naturels s’adapte à votre type de
+peau et lui permet de retrouver éclat et vitalité.
+
+
+<h3>Oasis de l'éternité</h3>
+
+Soin anti-âge réparateur pour retrouver jeunesse et vitalité.
+
+<h3>Oasis des sources vives</h3>
+
+Soin hydra-âge pour peaux sèches et peaux déshydratées.
+Retrouvez une hydratation profonde et permanente de la
+peau.
+
+
+<h3>Oasis du temple de sérénité</h3>
+
+Soin apaisant  pour peaux sensibles et irritées.
+Retrouvez une peau désensibilisée et confortable.
+
+<h3>Oasis de la pureté</h3>
+
+Soin purifiant pour peaux grasses.
+Retrouvez une peau nette.

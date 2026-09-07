@@ -1,0 +1,53 @@
+{% include head.html %}
+<div id="content">
+    <article class="main clearfix">
+        <header>
+        {% if page.hide_title  != "true" %}
+            <h2>{% include section_title.html %}</h2>
+            <h1>{{page.title}}</h1>{% if page.price %}<p>&nbsp;-&nbsp;{{page.time}} / {{page.price}} &euro;</p>{% endif %}
+        {% else %}
+        <h1>{% include section_title.html %}</h1>
+        {% endif %}
+        &nbsp;
+        <iframe src="//www.facebook.com/plugins/like.php?href={{ site.url | replace:':','%3A' | replace:'/','%2F' }}{{ page.url | replace:'/','%2F' }}&amp;send=false&amp;layout=button_count&amp;width=82&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:92px; height:21px;vertical-align: text-top;" allowTransparency="true">
+        </iframe>
+        </header>
+        <img width="320px" src="/{{ page.big_image }}" >
+        <div>
+        {{ content }}
+            {% if page.good %}
+            <section>
+                <h1>Les bienfaits du massage</h1>
+                <ul>
+                {% for g in page.good %}
+                    <li>{{g}}</li>
+                {% endfor %}
+                </ul>
+            </section>
+            {% endif %}
+            {% if page.bad %}
+            <section>
+                <h1>Les contres indications</h1>
+                <ul>
+                {% for b in page.bad %}
+                    <li>{{b}}</li>
+                {% endfor %}
+                </ul>
+            </section>
+            {% endif %}
+            {% if page.advice%}
+            <section>
+                <h1>Les petits conseils</h1>
+                <ul>
+                {% for a in page.advice %}
+                    <li>{{a}}</li>
+                {% endfor %}
+                </ul>
+            </section>
+            {% endif %}
+        </div>
+    </article>
+    {% include links.html %}
+    {% include articles.html %}
+</div>
+{% include footer.html %}

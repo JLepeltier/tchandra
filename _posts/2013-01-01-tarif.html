@@ -1,0 +1,80 @@
+---
+lead: Cartes cadeaux disponibles sur demande!
+small_image: img/articles/cadeaux/small.jpg
+permalink: tarif.html
+layout: default
+slug: tarif
+title: Tchandra massage - Tarif
+description: "Un massage, un soin de beauté, c'est un beau cadeau à se faire ou à offrir, qui fait toujours plaisir!
+Pour toutes les occasions: Noël, anniversaire, mariage, st-valentin, fêtes des mères/pères"
+css:  [css/links.css, css/tarif.css]
+section: tarif
+section_title: Tarifs des massages et soins de beaut&eacute;
+massages: [ suedois, marma, deep_tissue, ayurvedique, balinais, thai, lomilomi, tibetain, californien, pierres, tete, chineitsang, chinois, relaxant, reflexologie, enceinte, dos]
+beaute: [visage, drainage, minceur, mains]
+---
+<h1 style="margin-bottom: 10px;">{% include section_title.html %}</h1>
+{% include links.html %}
+<table>
+   <thead>
+       <tr>
+           <th>Massages</th>
+           <th>Durée</th>
+           <th>Tarif</th>
+       </tr>
+   </thead>
+   <tbody>
+{% for slug in page.massages %}
+    {% for post in site.posts %}
+        {% if post.slug == slug %}
+       <tr>
+           <td>{{post.title}}</td>
+           <td>{{post.time}}</td>
+           <td>{{post.price}} &euro;</td>
+       </tr>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+                <tr><td>Massage du dos, buste et tête</td><td>1h</td><td>80 &euro;</td></tr>	   
+                <tr><td>Massage intuitif 1h</td><td>1h</td><td>80 &euro;</td></tr>
+		<tr><td>Massage intuitif 1h15</td><td>1h15</td><td>100 &euro;</td></tr>
+		<tr><td>Massage intuitif 1h30</td><td>1h30</td><td>120 &euro;</td></tr>
+	        <tr><td>Massage intuitif 1h40</td><td>1h40</td><td>135 &euro;</td></tr>
+		<tr><td>Massage intuitif 2h</td><td>2h</td><td>160 &euro;</td></tr>
+        <tr>
+            <th colspan="3">Formules</th>
+        </tr>
+        <tr><td>Formule annuelle : 12 massages valable 12 mois*</td><td></td><td>1260 &euro;</td></tr>
+        <tr><td>Formule 6 massages : Six massages au choix valable 6 mois* </td><td> </td><td>630 &euro;</td></tr>
+        <tr><td>Formule cocooning : Massage relaxant, réflexologie et soin du visage</td><td>3h</td><td>220 &euro;</td></tr>
+        <tr><td>Formule sérénité : Massage du dos, réflexologie et soin du visage</td><td>2h30</td><td>190 &euro;</td></tr>
+        <tr><td>Formule vitaminée : Massage ayurvédique abhyanga et soin du visage </td><td>2h30</td><td>190 &euro;</td></tr>
+        <tr><td>* supplément pour les massages thaï,intuitif 1h30/2h, marma, deep tissue et suédois
+		<tr>
+            <th colspan="3">Soins de Beauté</th>
+        </tr>
+{% for slug in page.beaute %}
+    {% for post in site.posts %}
+        {% if post.slug == slug %}
+       <tr>
+           <td>{{post.title}}</td>
+           <td>{{post.time}}</td>
+           <td>{{post.price}} &euro;</td>
+       </tr>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+        <tr>
+            <th colspan="3">&Eacute;pilations</th>
+        </tr>
+        <tr><td colspan="2">Jambes complètes</td><td>30 &euro;</td></tr>
+        <tr><td colspan="2">Demi-jambes</td><td>20 &euro;</td></tr>
+        <tr><td colspan="2">Maillot échancré</td><td>25 &euro;</td></tr>
+        <tr><td colspan="2">Maillot simple</td><td>20 &euro;</td></tr>
+        <tr><td colspan="2">Aisselles</td><td>15 &euro;</td></tr>        
+   </tbody>
+</table>
+<h2>Réglement</h2>
+<p>Le réglement s'effectue en espèces ou chèques. Les cartes bleues ne sont pas acceptées. </p>
+<p>Tout rendez-vous non annulé 24h à l'avance ou non reporté dans les 7 jours est dû.</p>
+

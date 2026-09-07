@@ -1,0 +1,28 @@
+.links {
+    margin-bottom: 0;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+thead tr:first-child {
+    width: 200px
+}
+
+h2, th {
+    color: #E347BD;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+tbody tr:hover  td {
+    background-color: #eeaacc;
+}
+
+tbody tr td{
+    transition: all 0.3s ease 0s;
+}

@@ -1,0 +1,34 @@
+---
+lead: "Contact"
+small_image: img/articles/contact/small.jpg
+permalink: contact.html
+slug: contact
+description: "Toutes les informations pour vous réserver un moment de détente inoubliable."
+layout: default
+title: "Tchandra massage - Contact"
+css:  [css/links.css, css/contact.css]
+section: contact
+section_title: Contact
+links: []
+---
+<article class="main clearfix">
+    <h1 class="header" >{% include section_title.html %}</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4813.747953202693!2d2.3616212178044425!3d48.86365085311257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e0645cb39d3%3A0xcd92568e5648b42f!2s75+Rue+Charlot%2C+75003+Paris!5e0!3m2!1sfr!2sfr!4v1476624071126" width="320" height="426" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <div>
+        <p>Massages et soins sur rendez-vous uniquement.</p>
+        <p>Du lundi au vendredi de 10h30 à 19h30.</p>
+        <address>
+            Contactez <span class="colored">Laure</span><br />
+            Tel: <span class="colored">06.84.03.29.08</span><br />
+            Mail: <span class="colored">lauremassage@gmail.com</span><br />
+            Adresse: <span class="colored">75 rue Charlot 75003 Paris</span><br />
+            Métro: <span class="colored">République lignes 3, 5, 8, 9 et 11,  
+            Filles du Calvaire ligne 8, 
+            Temple ligne 3, 
+            Oberkampf ligne 5 et 9</span><br />
+            Bus: <span class="colored">Jean-Pierre Timbaud -ligne 65 et 20 / Bretagne - ligne 96</span><br />
+        </address>
+    </div>
+</article>
+{% include links.html %}
+{% include articles.html %}
