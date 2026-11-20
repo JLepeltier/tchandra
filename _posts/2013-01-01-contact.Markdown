@@ -28,6 +28,7 @@ links: []
             Oberkampf ligne 5 et 9</span><br />
             Bus: <span class="colored">Jean-Pierre Timbaud -ligne 65 et 20 / Bretagne - ligne 96</span><br />
         </address>
+        {% include social-links.html %}
     </div>
 </article>
 {% include links.html %}

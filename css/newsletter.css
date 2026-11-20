@@ -1,0 +1,16 @@
+#Table_01 {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+    table-layout: fixed;
+}
+
+#Table_01 td {
+    width: auto;
+}
+
+#Table_01 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

@@ -6,18 +6,27 @@
         Purpose of the stylesheet follows.
 */
 
+#articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
 #articles article {
-    height: 500px;
-    width: 190px;
+    display: flex;
+    flex-direction: column;
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #E5E5E5;
     box-shadow: 1px 1px 3px #F5F5F5;
-    float: left;
-    margin: 0 20px 20px 0;
-    overflow: visible;
     padding: 10px;
-    position: relative;
+}
 
+.article-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
 }
 
 #articles article h1 {
@@ -25,7 +34,7 @@
 }
 
 #articles article h1 a {
-   color: #E347BD;
+   color: var(--accent);
    font-size: 18px;
    font-style: italic;
 }
@@ -39,17 +48,80 @@
     color: #000;
 }
 
-#articles article p#price{
-    color: #E347BD;
+#articles article .price {
+    color: var(--accent);
     font-size: 16px;
     font-style: italic;
-    position:absolute;
-    bottom: 20px;
+    margin-top: auto;
 }
 
-#articles article a img {
-    transition: opacity 0.2s ease 0s;
+#articles article iframe {
+    align-self: end;
+    margin-top: 8px;
 }
+
+#articles article img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+}
+
 #articles article a img:hover {
     opacity: 0.75;
+}
+
+@media (min-width: 841px) {
+    #articles {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 212px));
+    }
+
+    #articles article {
+        min-height: 522px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 840px) {
+    #articles {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        margin-inline: calc(-1 * var(--page-gutter));
+    }
+
+    #articles article {
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    #articles .article-copy {
+        padding: 12px var(--page-gutter) 16px;
+    }
+
+    #articles article > a {
+        margin: 0;
+    }
+
+    #articles article h1 a {
+        margin-bottom: 5px;
+        font-size: 24px;
+        line-height: 1.15;
+    }
+
+    #articles article p a {
+        margin-bottom: 0;
+        font-size: 1rem;
+        line-height: 1.45;
+    }
+
+    #articles article .price {
+        margin-top: 6px;
+    }
+
+    #articles article iframe {
+        display: none;
+    }
 }
