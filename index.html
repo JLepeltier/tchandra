@@ -22,7 +22,10 @@ links:
             <li>
                 <article id="slide-massage" >
                     <a href="/massages.html">
-                        <img width="928" height="501" src="img/home/massage.jpg" alt="">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/home/massage-mobile.jpg">
+                            <img width="928" height="501" src="img/home/massage.jpg" alt="" fetchpriority="high">
+                        </picture>
                         <hgroup>
                             <h1>Envie de l&acirc;cher prise&nbsp;?</h1>
                             <h2>Faites le tour du monde en massages</h2>
@@ -34,7 +37,10 @@ links:
             <li>
                 <article id="slide-beauty" >
                     <a href="/beaute.html">
-                        <img width="928" height="501" src="img/home/beauty.jpg" alt="" loading="lazy">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/home/beauty-mobile.jpg">
+                            <img width="928" height="501" src="img/home/beauty.jpg" alt="" loading="lazy" fetchpriority="low">
+                        </picture>
                         <hgroup>
                             <h1>Envie de s’offrir une beauté&nbsp;?</h1>
                             <h2>Prendre soin de son corps, de sa peau</h2>
@@ -46,7 +52,10 @@ links:
             <li>
                 <article id="slide-tchandra" >
                     <a href="/tchandra.html">
-                        <img width="928" height="501" src="img/home/tchandra.jpg" alt="" loading="lazy">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/home/tchandra-mobile.jpg">
+                            <img width="928" height="501" src="img/home/tchandra.jpg" alt="" loading="lazy" fetchpriority="low">
+                        </picture>
                         <hgroup>
                             <h1>Découvrez Tchandra</h1>
                             <h2>Au voyage du bien être...</h2>
@@ -58,7 +67,10 @@ links:
             <li>
                 <article id="slide-office">
                     <a href="/cabinet.html">
-                        <img width="928" height="501" src="img/home/office.jpg" alt="" loading="lazy">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/home/office-mobile.jpg">
+                            <img width="928" height="501" src="img/home/office.jpg" alt="" loading="lazy" fetchpriority="low">
+                        </picture>
                         <hgroup>
                             <h1>S’évader en plein coeur de Paris</h1>
                             <h2>Un espace pour votre bien-être dans le Marais</h2>
@@ -70,7 +82,10 @@ links:
             <li>
                 <article id="slide-prices">
                     <a href="/tarif.html">
-                        <img width="928" height="501" src="img/home/prices.jpg" alt="" loading="lazy">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/home/prices-mobile.jpg">
+                            <img width="928" height="501" src="img/home/prices.jpg" alt="" loading="lazy" fetchpriority="low">
+                        </picture>
                         <hgroup>
                             <h1>S’offrir du temps pour soi, du bien-être</h1>
                             <h2>Et le partager, c’est possible !</h2>
@@ -82,7 +97,10 @@ links:
             <li>
                 <article id="slide-contact" >
                     <a {% include booking-link-attributes.html placement="accueil_visuel" %}>
-                        <img width="928" height="501" src="img/home/contact.jpg" alt="" loading="lazy">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="img/home/contact-mobile.jpg">
+                            <img width="928" height="501" src="img/home/contact.jpg" alt="" loading="lazy" fetchpriority="low">
+                        </picture>
                         <hgroup>
                             <h1>Prendre rendez-vous</h1>
                             <h2>Pour venir se faire du bien</h2>

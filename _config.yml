@@ -1,3 +1,10 @@
 baseurl: ''
 url: https://www.tchandra-massage.fr
 booking_url: https://calendly.com/tchandra-massage
+
+defaults:
+  - scope:
+      path: newsletters
+      type: pages
+    values:
+      layout: newsletter

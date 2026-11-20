@@ -6,7 +6,7 @@
         {% if post.slug == slug %}
     <article>
         <a href="{{ post.url }}">
-            <img width="190" height="190" src="/{{ post.small_image }}" alt="{{ post.lead | escape }}">
+            <img width="190" height="190" src="/{{ post.small_image }}" alt="{{ post.lead | escape }}" loading="lazy">
         </a>
         <div class="article-copy">
             <header>

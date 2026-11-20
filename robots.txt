@@ -1,5 +1,12 @@
 # robotstxt.org/
 
 User-agent: *
+Disallow: /newsletters/*/images/
+Disallow: /newsletters/*.jpg
+Disallow: /newsletters/*.jpeg
+Disallow: /newsletters/*.png
+Disallow: /newsletters/*.gif
+Disallow: /newsletters/*.webp
+Disallow: /newsletters/*.avif
 
 Sitemap: https://www.tchandra-massage.fr/sitemap.xml

@@ -1,0 +1,14 @@
+{%- assign robots = '<meta name="robots" content="noindex, noimageindex">' -%}
+{%- if content contains robots -%}
+    {{- content -}}
+{%- else -%}
+    {%- assign closing_head = '</head>' -%}
+    {%- unless content contains closing_head -%}
+        {%- assign closing_head = '</HEAD>' -%}
+    {%- endunless -%}
+    {%- capture head_with_robots -%}
+{{ robots }}
+{{ closing_head }}
+    {%- endcapture -%}
+    {{- content | replace_first: closing_head, head_with_robots -}}
+{%- endif -%}
