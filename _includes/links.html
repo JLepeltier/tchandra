@@ -3,6 +3,18 @@
         <li>
             <a href="mailto:lauremassage@gmail.com?subject=M'inscrire à la newsletter&body=Bonjour,%0A Je souhaiterais m'inscrire à la newsletter de Tchandra massage.%0ACordialement,">Inscrivez vous à la newsletter pour être au courant des offres promotionnelles.</a>
         </li>
+        {% if include.service.section == "massages" or include.service.section == "beaute" %}
+            {% assign booking_options = site.data.calendly[page.slug] %}
+            {% assign booking_subject = page.title | prepend: 'Rendez-vous pour ' | uri_escape %}
+            {% for option in booking_options %}
+        <li><a {% include booking-link-attributes.html placement="fiche_soin" event=option.event %}>Réserver{% if option.label %} · {{ option.label }}{% elsif page.section == "massages" %} ce massage{% else %} ce soin{% endif %}</a></li>
+            {% else %}
+        <li><a href="mailto:lauremassage@gmail.com?subject={{ booking_subject }}">Demander un rendez-vous par e-mail</a></li>
+            {% endfor %}
+            {% if booking_options.size > 1 %}
+        <li><a href="mailto:lauremassage@gmail.com?subject={{ booking_subject }}">Autre durée par e-mail</a></li>
+            {% endif %}
+        {% else %}
         <li>
             {% if page.slug == 'tarif' %}
             <a {% include booking-link-attributes.html placement="tarifs" %}>Prendre rendez-vous en ligne</a>
@@ -10,5 +22,6 @@
             <a {% include booking-link-attributes.html placement="encart" %}>Prendre rendez-vous en ligne</a>
             {% endif %}
         </li>
+        {% endif %}
     </ul>
 </section>

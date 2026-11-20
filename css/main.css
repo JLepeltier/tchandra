@@ -124,15 +124,6 @@ a {
     outline-offset: 3px;
 }
 
-.booking-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px 12px;
-    margin-top: 8px;
-}
-
-.booking-secondary,
 .footer-booking a {
     display: inline-flex;
     align-items: center;
