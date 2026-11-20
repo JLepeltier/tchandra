@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Tchandra massage
+title: "Tchandra Massages · Massages sur mesure dans le Marais, Paris 3e"
+description: "Laure Espinat vous reçoit sur rendez-vous au 75 rue Charlot, Paris 3e. Découvrez le massage intuitif sur mesure, 1 h à 80 €, les massages du monde et les soins du visage."
 js: [js/index.js]
 css:  [css/index.css, css/list.css, css/links.css]
 slug: index
@@ -10,6 +11,11 @@ links:
   - lomilomi
   - charte
 ---
+{% include local-business.html %}
+<p class="home-intro">
+    <strong>Massages sur mesure dans le Marais</strong>
+    <span>Laure Espinat · 75 rue Charlot, Paris 3e</span>
+</p>
 <section class="home-panels">
     <div class="panel-window">
         <ul class="panel-track">
@@ -75,7 +81,7 @@ links:
 
             <li>
                 <article id="slide-contact" >
-                    <a href="/contact.html">
+                    <a {% include booking-link-attributes.html placement="accueil_visuel" %}>
                         <img width="928" height="501" src="img/home/contact.jpg" alt="" loading="lazy">
                         <hgroup>
                             <h1>Prendre rendez-vous</h1>

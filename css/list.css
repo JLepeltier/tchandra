@@ -6,14 +6,14 @@
         Purpose of the stylesheet follows.
 */
 
-#articles {
+.article-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
     gap: 20px;
     margin-bottom: 20px;
 }
 
-#articles article {
+.article-list article {
     display: flex;
     flex-direction: column;
     background: none repeat scroll 0 0 #FFFFFF;
@@ -29,38 +29,38 @@
     min-width: 0;
 }
 
-#articles article h1 {
+.article-list .article-card-title {
     margin: 0;
 }
 
-#articles article h1 a {
+.article-list .article-card-title a {
    color: var(--accent);
    font-size: 18px;
    font-style: italic;
 }
-#articles article a {
+.article-list article a {
     display: block;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
-#articles article p a{
+.article-list article p a{
     color: #000;
 }
 
-#articles article .price {
+.article-list article .price {
     color: var(--accent);
     font-size: 16px;
     font-style: italic;
     margin-top: auto;
 }
 
-#articles article iframe {
+.article-list article iframe {
     align-self: end;
     margin-top: 8px;
 }
 
-#articles article img {
+.article-list article img {
     display: block;
     width: 100%;
     height: auto;
@@ -69,59 +69,59 @@
     transition: opacity 0.2s ease;
 }
 
-#articles article a img:hover {
+.article-list article a img:hover {
     opacity: 0.75;
 }
 
 @media (min-width: 841px) {
-    #articles {
+    .article-list {
         grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 212px));
     }
 
-    #articles article {
+    .article-list article {
         min-height: 522px;
         box-sizing: border-box;
     }
 }
 
 @media (max-width: 840px) {
-    #articles {
+    .article-list {
         grid-template-columns: minmax(0, 1fr);
         gap: 0;
         margin-inline: calc(-1 * var(--page-gutter));
     }
 
-    #articles article {
+    .article-list article {
         border: 0;
         box-shadow: none;
         padding: 0;
     }
 
-    #articles .article-copy {
+    .article-list .article-copy {
         padding: 12px var(--page-gutter) 16px;
     }
 
-    #articles article > a {
+    .article-list article > a {
         margin: 0;
     }
 
-    #articles article h1 a {
+    .article-list .article-card-title a {
         margin-bottom: 5px;
         font-size: 24px;
         line-height: 1.15;
     }
 
-    #articles article p a {
+    .article-list article p a {
         margin-bottom: 0;
         font-size: 1rem;
         line-height: 1.45;
     }
 
-    #articles article .price {
+    .article-list article .price {
         margin-top: 6px;
     }
 
-    #articles article iframe {
+    .article-list article iframe {
         display: none;
     }
 }

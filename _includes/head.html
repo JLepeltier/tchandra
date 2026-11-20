@@ -17,9 +17,11 @@
     <meta property="og:type" content="article"/>
     <meta property="og:site_name" content="tchandra massage"/>
     <meta property="fb:page_id" content="253067731426207"/>
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    {% assign canonical_url = page.url | replace: '/index.html', '/' | absolute_url %}
+    <link rel="canonical" href="{{ canonical_url | escape }}">
+    <meta property="og:url" content="{{ canonical_url | escape }}"/>
     {% if page.small_image %}
-    <meta property="og:image" content="{{ site.url }}{{ page.small_image }}"/>
+    <meta property="og:image" content="{{ page.small_image | absolute_url | escape }}"/>
     {% endif %}
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/main.css">
@@ -41,6 +43,12 @@
                     <li id="nav-boudha"><a href="/tchandra.html">Tchandra</a></li>
                     <li id="nav-office"><a href="/cabinet.html">Le cabinet</a></li>
                     <li id="nav-prices"><a href="/tarif.html" >Tarif</a></li>
+                    <li id="nav-booking">
+                        <a class="site-booking" {% include booking-link-attributes.html placement="reservation_site" %}>
+                            <img src="/img/logo.png" width="24" height="29" alt="">
+                            Réserver <span aria-hidden="true">↗</span>
+                        </a>
+                    </li>
                     <li id="nav-contact"><a href="/contact.html">Contact</a></li>
                     <li id="nav-instagram" class="desktop-social"><a href="https://www.instagram.com/tchandra.massage/" target="_blank" rel="noopener">Instagram</a></li>
                     <li id="nav-facebook" class="desktop-social"><a href="https://www.facebook.com/tchandramassage" target="_blank" rel="noopener">Facebook</a></li>

@@ -30,6 +30,15 @@ article.main header p {
     font-style: italic;
 }
 
+.booking-actions .booking-button {
+    padding: 0 4px 0 0;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 article.main {
     margin-bottom: 10px;
 }

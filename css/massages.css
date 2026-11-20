@@ -1,0 +1,48 @@
+.massage-guide {
+    margin-bottom: 20px;
+}
+
+.massage-guide ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.massage-guide li {
+    margin: 0;
+}
+
+.massage-guide a {
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: 44px;
+    color: #a92883;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.massage-guide a:hover {
+    color: #782160;
+}
+
+.massage-group {
+    scroll-margin-top: 16px;
+}
+
+.massage-group h2 {
+    margin-bottom: 12px;
+    color: #a92883;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    .massage-guide ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 12px;
+    }
+}

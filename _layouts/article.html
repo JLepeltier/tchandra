@@ -11,6 +11,19 @@
         &nbsp;
         <iframe src="//www.facebook.com/plugins/like.php?href={{ site.url | replace:':','%3A' | replace:'/','%2F' }}{{ page.url | replace:'/','%2F' }}&amp;send=false&amp;layout=button_count&amp;width=82&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:92px; height:21px;vertical-align: text-top;" allowTransparency="true">
         </iframe>
+        {% if page.section == "massages" or page.section == "beaute" %}
+        {% assign booking_options = site.data.calendly[page.slug] %}
+        <div class="booking-actions">
+            {% for option in booking_options %}
+            <a class="booking-button" {% include booking-link-attributes.html placement="fiche_soin" event=option.event %}>Réserver{% if option.label %} · {{ option.label }}{% elsif page.section == "massages" %} ce massage{% else %} ce soin{% endif %}</a>
+            {% else %}
+            <a class="booking-button" href="mailto:lauremassage@gmail.com?subject={{ page.title | prepend: 'Rendez-vous pour ' | uri_escape }}">Demander un rendez-vous par e-mail</a>
+            {% endfor %}
+            {% if booking_options.size > 1 %}
+            <a class="booking-secondary" href="mailto:lauremassage@gmail.com?subject={{ page.title | prepend: 'Rendez-vous pour ' | uri_escape }}">Autre durée par e-mail</a>
+            {% endif %}
+        </div>
+        {% endif %}
         </header>
         {% if page.big_image %}
         <img width="320" src="/{{ page.big_image }}" alt="">

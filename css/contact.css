@@ -2,6 +2,11 @@ h1 {
     display: inline-block;
 }
 
+.contact-booking {
+    grid-column: 1 / -1;
+    margin-bottom: 16px;
+}
+
 article.main > iframe {
     display: block;
     box-sizing: border-box;

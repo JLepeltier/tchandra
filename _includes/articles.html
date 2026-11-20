@@ -1,5 +1,7 @@
-<section id="articles">
-{% for slug in page.links %}
+{% assign article_slugs = include.slugs | default: page.links %}
+{% assign card_heading = include.heading | default: 'h1' %}
+<div class="article-list"{% unless include.slugs %} id="articles"{% endunless %}>
+{% for slug in article_slugs %}
     {% for post in site.posts %}
         {% if post.slug == slug %}
     <article>
@@ -8,7 +10,7 @@
         </a>
         <div class="article-copy">
             <header>
-                <h1><a href="{{ post.url }}">{{ post.lead }}</a></h1>
+                <{{ card_heading }} class="article-card-title"><a href="{{ post.url }}">{{ post.lead }}</a></{{ card_heading }}>
             </header>
             <p><a href="{{ post.url }}">{{ post.description }}</a></p>
             {% if post.time && post.price %}
@@ -23,4 +25,4 @@
         {% endif %}
     {% endfor %}
 {% endfor %}
-</section>
+</div>

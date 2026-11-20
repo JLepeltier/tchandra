@@ -14,24 +14,12 @@
          <span class="country-name">France</span>
         </div>
     </div>
+    <p class="footer-booking"><a {% include booking-link-attributes.html placement="footer" %}>Prendre rendez-vous en ligne</a></p>
     {% include social-links.html %}
 </footer>
 {% for j in page.js %}
 <script src="{{ j }}"></script>
 {% endfor %}
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38986758-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </body>
 </html>
