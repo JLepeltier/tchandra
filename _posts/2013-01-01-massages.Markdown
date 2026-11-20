@@ -25,14 +25,6 @@ groups:
 ---
 <h1 class="header">{% include section_title.html %}</h1>
 
-<nav class="massage-guide" aria-label="Choisir un massage">
-    <ul>
-        {% for group in page.groups %}
-        <li><a href="#{{ group.id }}">{{ group.title }}</a></li>
-        {% endfor %}
-    </ul>
-</nav>
-
 <div id="articles">
     {% for group in page.groups %}
     <section class="massage-group" id="{{ group.id }}" aria-labelledby="{{ group.id }}-title" tabindex="-1">
