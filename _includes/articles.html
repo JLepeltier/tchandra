@@ -1,7 +1,6 @@
-{% assign article_slugs = include.slugs | default: page.links %}
 {% assign card_heading = include.heading | default: 'h1' %}
-<div class="article-list"{% unless include.slugs %} id="articles"{% endunless %}>
-{% for slug in article_slugs %}
+<div class="article-list" id="articles">
+{% for slug in page.links %}
     {% for post in site.posts %}
         {% if post.slug == slug %}
     {% assign card_image = site.data.card_images[post.slug] | default: post.big_image %}
