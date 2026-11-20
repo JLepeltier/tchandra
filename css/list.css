@@ -60,8 +60,12 @@
     margin-top: 8px;
 }
 
+.article-list article picture,
 .article-list article img {
     display: block;
+}
+
+.article-list article img {
     width: 100%;
     height: auto;
     aspect-ratio: 1;

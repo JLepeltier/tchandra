@@ -4,9 +4,15 @@
 {% for slug in article_slugs %}
     {% for post in site.posts %}
         {% if post.slug == slug %}
+    {% assign card_image = site.data.card_images[post.slug] | default: post.big_image %}
     <article>
         <a href="{{ post.url }}">
-            <img width="190" height="190" src="/{{ post.small_image }}" alt="{{ post.lead | escape }}" loading="lazy">
+            <picture>
+                {% if card_image and card_image != post.small_image %}
+                <source media="(max-width: 840px)" srcset="/{{ card_image }}">
+                {% endif %}
+                <img width="190" height="190" src="/{{ post.small_image }}" alt="{{ post.lead | escape }}" loading="lazy">
+            </picture>
         </a>
         <div class="article-copy">
             <header>

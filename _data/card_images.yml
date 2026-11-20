@@ -1,0 +1,10 @@
+balinais: img/home/massage-mobile.jpg
+massages: img/home/beauty-mobile.jpg
+contact: img/home/contact-mobile.jpg
+suedois: img/articles/massages/suedois/card.jpg
+enceinte: img/articles/massages/enceinte/card.jpg
+
+# Avoid loading the full-resolution cabinet photo in a card.
+cabinet: img/articles/cabinet/small.jpg
+# The detailed photo is black and white. Keep the original color card.
+lomilomi: img/articles/massages/lomilomi/small.jpg
