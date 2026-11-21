@@ -41,7 +41,7 @@ html {
 
 body {
     --accent: #e347bd;
-    --footer-accent: #eeaacc;
+    --footer-accent: #a92883;
     --page-gutter: clamp(14px, 4vw, 48px);
     --sidebar-width: 182px;
     background: none repeat scroll 0 0 #FFFFFF;
@@ -261,11 +261,16 @@ article.main.clearfix::after {
     color: var(--footer-accent);
 }
 
-footer[role="siteinfo"] {
+body > footer {
     grid-column: 1 / -1;
     border-top: 2px solid #E5E5E5;
     min-height: 70px;
     padding: 20px 0 calc(80px + env(safe-area-inset-bottom));
+}
+
+body > footer .vcard a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .footer-booking {
@@ -297,7 +302,6 @@ footer .social-links {
 @media (max-width: 840px) {
     body {
         --accent: #a92883;
-        --footer-accent: var(--accent);
         grid-template-columns: minmax(0, 1fr);
     }
 
