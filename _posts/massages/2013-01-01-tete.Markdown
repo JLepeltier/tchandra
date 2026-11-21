@@ -10,6 +10,7 @@ section_title: Massages
 permalink: massages/tete.html
 time: 1h
 price: 80
+calendly_url: https://calendly.com/tchandra-massage/massage-de-la-tete
 slug: tete
 links: [thai, reflexologie, beaute, tarif]
 good: ["Pour les personnes souffrant de bruxisme, migraines et tensions", "Lâcher prise"]

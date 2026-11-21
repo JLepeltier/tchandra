@@ -4,11 +4,10 @@
             <a href="mailto:lauremassage@gmail.com?subject=M'inscrire à la newsletter&body=Bonjour,%0A Je souhaiterais m'inscrire à la newsletter de Tchandra massage.%0ACordialement,">Inscrivez vous à la newsletter pour être au courant des offres promotionnelles.</a>
         </li>
         {% if include.service.section == "massages" %}
-            {% assign booking = site.data.calendly[page.slug] %}
             {% assign booking_subject = page.title | prepend: 'Rendez-vous pour ' | uri_escape %}
         <li>
-            {% if booking %}
-            <a {% include booking-link-attributes.html placement="fiche_soin" event=booking %}>Réserver ce massage</a>
+            {% if page.calendly_url and page.calendly_url != empty %}
+            <a {% include booking-link-attributes.html placement="fiche_soin" url=page.calendly_url %}>Réserver ce massage</a>
             {% else %}
             <a href="mailto:lauremassage@gmail.com?subject={{ booking_subject }}" aria-label="Réserver ce massage par e-mail">Réserver ce massage</a>
             {% endif %}

@@ -10,6 +10,7 @@ section_title: Massages
 permalink: massages/reflexologie.html
 time: 1h
 price: 75
+calendly_url: https://calendly.com/tchandra-massage/reflexologie-plantaire
 slug: reflexologie
 links: [chinois, thai, mains, tarif]
 good: ["Détend en profondeur", "Prévient des troubles tels que les maux de têtes, le stress, l'asthme, la constipation, la sinusite et les migraines"]

@@ -10,6 +10,7 @@ section_title: Massages
 permalink: massages/californien.html
 time: 1h15
 price: 100
+calendly_url: https://calendly.com/tchandra-massage/massage-californien
 slug: californien
 links: [balinais, relaxant, beaute, tarif]
 good: ["Elimination des toxines", "Relancer la circulation lymphatique", "Oxygénation des tissus", "Décontraction musculaire", "Lâcher prise"]

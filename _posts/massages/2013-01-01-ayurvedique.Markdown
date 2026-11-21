@@ -10,6 +10,7 @@ section_title: Massages
 permalink: massages/ayurvedique.html
 time: 1h30
 price: 120
+calendly_url: https://calendly.com/tchandra-massage/massage-ayurvedique-abhyanga
 slug: ayurvedique
 links: [ balinais, deep_tissue, tarif, charte]
 advice: ["Garder l’huile au moins 15 min sur le corps", "Prendre une douche bien chaude quelques heures après le massage pour une meilleure pénétration de l’huile  sur la peau et l’élimination les toxines."]
