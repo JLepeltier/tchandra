@@ -1,37 +1,16 @@
-ayurvedique:
-  - event: massage-ayurvedique-abhyanga
-balinais:
-  - event: massage-balinais
-californien:
-  - event: massage-californien
-chineitsang:
-  - event: massage-chi-nei-tsang-ventre
-chinois:
-  - event: massage-energetique-chinois-chrong-mai
-deep_tissue:
-  - event: massage-deep-tissue
-dos:
-  - event: 30min
-enceinte:
-  - event: massage-femme-enceinte
-intuitif:
-  - event: massage-intuitif-1h
-    label: 1 h
-  - event: massage-intuitif-2h
-    label: 2 h
-lomilomi:
-  - event: massage-hawaiien-lomi-lomi
-marma:
-  - event: massage-ayurvedique-marma
-pierres:
-  - event: massage-aux-pierres-chaudes
-reflexologie:
-  - event: reflexologie-plantaire
-suedois:
-  - event: massage-suedois
-tete:
-  - event: massage-de-la-tete
-tibetain:
-  - event: massage-tibetain
-visage:
-  - event: soin-visage-tchandra
+ayurvedique: massage-ayurvedique-abhyanga
+balinais: massage-balinais
+californien: massage-californien
+chineitsang: massage-chi-nei-tsang-ventre
+chinois: massage-energetique-chinois-chrong-mai
+deep_tissue: massage-deep-tissue
+dos: 30min
+enceinte: massage-femme-enceinte
+intuitif: massage-intuitif-1h
+lomilomi: massage-hawaiien-lomi-lomi
+marma: massage-ayurvedique-marma
+pierres: massage-aux-pierres-chaudes
+reflexologie: reflexologie-plantaire
+suedois: massage-suedois
+tete: massage-de-la-tete
+tibetain: massage-tibetain
