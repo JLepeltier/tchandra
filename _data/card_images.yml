@@ -5,6 +5,6 @@ suedois: img/articles/massages/suedois/card.jpg
 enceinte: img/articles/massages/enceinte/card.jpg
 
 # Avoid loading the full-resolution cabinet photo in a card.
-cabinet: img/articles/cabinet/small.jpg
+cabinet: img/articles/cabinet/small.webp
 # The detailed photo is black and white. Keep the original color card.
-lomilomi: img/articles/massages/lomilomi/small.jpg
+lomilomi: img/articles/massages/lomilomi/small.webp

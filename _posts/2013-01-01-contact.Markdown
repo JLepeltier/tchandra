@@ -1,6 +1,6 @@
 ---
 lead: "Contact"
-small_image: img/articles/contact/small.jpg
+small_image: img/articles/contact/small.webp
 permalink: contact.html
 slug: contact
 description: "Toutes les informations pour vous réserver un moment de détente inoubliable."

@@ -3,7 +3,7 @@ css:  [css/list.css, css/links.css, css/article.css]
 lead: "Massage de la tête"
 title: "Massage de la tête"
 small_image: img/articles/massages/tete/small.jpg
-big_image: img/articles/massages/tete/big.jpg
+big_image: img/articles/massages/tete/big.webp
 layout: article
 section: massages
 section_title: Massages

@@ -2,7 +2,7 @@
 css:  [css/list.css, css/links.css, css/article.css]
 lead: "Massage deep tissue"
 title: "Massage deep tissue"
-small_image: img/articles/massages/deep_tissue/small.jpg
+small_image: img/articles/massages/deep_tissue/small.webp
 big_image: img/articles/massages/deep_tissue/big.jpg
 layout: article
 section: massages
